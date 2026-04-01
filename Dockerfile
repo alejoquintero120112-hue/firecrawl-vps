@@ -4,10 +4,11 @@ WORKDIR /app
 
 COPY . .
 
-WORKDIR /app/apps/api
+RUN npm install -g pnpm
+RUN pnpm install
 
-RUN npm install
+WORKDIR /app/apps/api
 
 EXPOSE 3002
 
-CMD ["npm", "start"]
+CMD ["pnpm", "start"]

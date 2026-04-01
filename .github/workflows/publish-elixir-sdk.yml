@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Set up Elixir
         uses: erlef/setup-beam@ee09b1e59bb240681c382eb1f0abc6a04af72764 # v1
